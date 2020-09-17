@@ -15,9 +15,11 @@ pipeline {
             }
             post {
                 always {
-                    junit 'target/surefire-reports/*.xml' 
-                }
-            }
-        }
+                    junit(allowEmptyResults: false,
+                    keepLongStdio: true,
+                    testResults: "**/test-results/functional-tests.xml")
+                } 
+           } 
+      }
     }
 }
