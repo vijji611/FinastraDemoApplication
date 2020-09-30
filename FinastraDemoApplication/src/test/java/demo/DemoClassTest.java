@@ -21,6 +21,7 @@ class DemoClassTest {
 	    public void testNumber() {
 	        String res = demoClass.play(1);
 	        Assertions.assertEquals(res, "1");
+		    System.out.println("Test1 completed");
 	    }
 
 	    @DisplayName("Play DemoClass with number = 3")
