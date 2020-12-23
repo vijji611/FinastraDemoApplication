@@ -5,7 +5,7 @@ public class DemoClass {
 	public static void main(String args[]) {
 		System.out.println("Test...");
 		String res = play(Integer.parseInt(args[0]));
-		System.out.println(res);
+		System.out.println("the inpput is---"+res);
 	}
 	
 	public static String play(int number) {
